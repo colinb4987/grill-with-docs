@@ -1,0 +1,20 @@
+{
+  "name": "grill-with-docs-local",
+  "interface": {
+    "displayName": "Grill with Docs (local)"
+  },
+  "plugins": [
+    {
+      "name": "grill-with-docs",
+      "source": {
+        "source": "local",
+        "path": "./plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
