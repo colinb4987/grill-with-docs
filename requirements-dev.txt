@@ -1,0 +1,9 @@
+# Development / test dependencies only. The plugin itself (./plugin) has no
+# runtime dependencies — it is pure instructions (a Skill) plus manifests.
+#
+#   - pytest: test runner
+#   - PyYAML: parse the YAML front matter and agents/openai.yaml
+#   - requests: call the OpenAI API for the behavioural scenario tests
+pytest>=8.0
+PyYAML>=6.0
+requests>=2.31
