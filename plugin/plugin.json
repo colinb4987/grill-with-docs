@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "grill-with-docs",
+  "version": "1.0.0",
+  "description": "A document-grounded, adversarial design-review capability for ChatGPT. Grill a plan, proposal, design, strategy, or decision against the documents that bear on it: surface assumptions, contradictions, missing information, dependencies, risks, and silently assumed decisions, in rounds of questions with recommended answers.",
+  "license": "MIT",
+  "keywords": [
+    "grilling",
+    "design-review",
+    "decision-making",
+    "adversarial",
+    "document-analysis",
+    "planning",
+    "risk"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Grill with Docs",
+        "shortDescription": "Stress-test a plan against your documents",
+        "longDescription": "An adversarial design-review facilitator that stress-tests a plan, proposal, or decision against the documents that bear on it, in rounds of numbered questions with recommended answers, and finishes with a synthesis of settled decisions, open risks, and the resulting plan.",
+        "category": "Productivity",
+        "brandColor": "#B45309",
+        "defaultPrompt": [
+          "Use $grill-with-docs to stress-test the plan or decision I describe, using the documents I attach as evidence.",
+          "Use $grill-with-docs to red-team the proposal I attach against the supporting documents, and end with a synthesis."
+        ]
+      }
+    }
+  }
+}
